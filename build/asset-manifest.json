@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3be4ba8d.css",
+    "main.js": "/static/js/main.f71ce0ef.js",
+    "static/js/787.74c7cad9.chunk.js": "/static/js/787.74c7cad9.chunk.js",
+    "static/media/BCKGND.png": "/static/media/BCKGND.de78208ca0802b2d1539.png",
+    "static/media/1.png": "/static/media/1.2810aa844901a3540e3f.png",
+    "static/media/ICN_LOGO_MPO.png": "/static/media/ICN_LOGO_MPO.5c70ed36d963bd062c10.png",
+    "static/media/ICN_DEPENDENCIA.png": "/static/media/ICN_DEPENDENCIA.778175ba4b2cf5268cca.png",
+    "static/media/ICN-UNIDOS.png": "/static/media/ICN-UNIDOS.09db21deee92695b4118.png",
+    "static/media/logo_atizapan.png": "/static/media/logo_atizapan.ad068d208de3df3981ac.png",
+    "static/media/ICN_GOBIERNA.png": "/static/media/ICN_GOBIERNA.a8bf81e84bd2f82a4f7b.png",
+    "static/media/telefono.png": "/static/media/telefono.2ce45c31b5da248aa65b.png",
+    "static/media/mensaje.png": "/static/media/mensaje.a5f3975b1fd143748e5e.png",
+    "static/media/ubicacion.png": "/static/media/ubicacion.dd4110f4b01e84d95409.png",
+    "static/media/identidad.png": "/static/media/identidad.2ec91f985689cd365bdc.png",
+    "static/media/adjunto.png": "/static/media/adjunto.b762241877eadc84d2ad.png",
+    "index.html": "/index.html",
+    "main.3be4ba8d.css.map": "/static/css/main.3be4ba8d.css.map",
+    "main.f71ce0ef.js.map": "/static/js/main.f71ce0ef.js.map",
+    "787.74c7cad9.chunk.js.map": "/static/js/787.74c7cad9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3be4ba8d.css",
+    "static/js/main.f71ce0ef.js"
+  ]
+}
