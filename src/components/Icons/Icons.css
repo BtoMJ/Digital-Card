@@ -48,16 +48,13 @@
     align-items: center;
     justify-content: space-around;
     transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
-    /* border: 1px solid #000; */
 }
 
 .icons a{
-    width: 10%;
+    width: 15%;
     padding: 2px;
     border: none;
     text-decoration: none;
-    /* border: 1px solid #000; */
 }
 
 .icons .iconTel{
@@ -65,7 +62,7 @@
 }
 
 .icons img{
-    width: 10%;
+    width: 15%;
     transition: all 0.5s;
 }
 
@@ -84,7 +81,25 @@
 }
 
 .logosMunicipales img{
-    width: 25%;
+    width: 40%;
+}
+
+.logosMunicipales .logoUnidos{
+    width: 100%;
+    text-align: center;
+    /* animation: elementIn 3s ease-in-out; */
+}
+
+.logosMunicipales .logoMunicipio{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.logosMunicipales .logoGobierna{
+    position: relative;
+    top: 5px;
+    margin-left: 15px;
 }
 
 .input{
@@ -132,8 +147,7 @@
         align-items: center;
         justify-content: space-around;
         transform: translatey(0px);
-        animation: float 3s ease-in-out infinite;
-        /* border: 1px solid #000; */
+        /* animation: float 3s ease-in-out infinite; */
     }
     
     .input{
@@ -213,8 +227,15 @@
         /* border: 1px solid #000; */
     }
     
-    .logosMunicipales img{
+    /* .logosMunicipales img{
         width: 25%;
+    } */
+
+    .logosMunicipales .logoUnidos{
+        width: 25%;
+        position: relative;
+        left: -100px;
+        animation: elementIn 3s ease-in-out ;
     }
 
     .icons img{
@@ -258,4 +279,25 @@
         filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.4)); 
         transform: translatey(0px);
     }
-  }
+}
+
+
+@keyframes elementIn {
+    0%{
+        transform: translateX(-300%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
+
+@keyframes elementOut {
+    0%{
+        transform: translateX(0%);
+        /* opacity: 1; */
+    }
+    100%{
+        transform: translateX(300%);
+        /* opacity: 0; */
+    }
+}

@@ -8,8 +8,12 @@
     /* border: 1px solid #000; */
 }
 
-.personContainer img{
-    width: 100%;
+.personContainer .imgPerson{
+    width: 90%;
+}
+
+.personContainer .banda{
+    width: 80%;
 }
 
 @media (max-width: 399px) and (max-height: 699px){
@@ -29,7 +33,7 @@
     }
 
     .personContainer .banda{
-        width: 100%;
+        width: 70%;
     }
     
 }
@@ -50,6 +54,6 @@
     }
     
     .personContainer .banda{
-        width: 100%;
+        width: 70%;
     }
 }

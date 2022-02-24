@@ -1,11 +1,11 @@
 import React from 'react';
 
-import dependencia from '../../assets/ICN_DEPENDENCIA.png';
+// import dependencia from '../../assets/ICN_DEPENDENCIA.png';
 import telefono from '../../assets/telefono.png';
 import mail from '../../assets/mensaje.png';
 import identidad from '../../assets/identidad.png';
 import adjunto from '../../assets/adjunto.png';
-import ubicacion from '../../assets/ubicacion.png';
+import redes from '../../assets/redes.png';
 import logoMunicipio from '../../assets/ICN_LOGO_MPO.png';
 import logoUnidos from '../../assets/ICN-UNIDOS.png';
 import logoGobierna from '../../assets/ICN_GOBIERNA.png';
@@ -14,6 +14,8 @@ import Box from '@mui/material/Box';
 // import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+
+import ReactPlayer from 'react-player';
 
 import './Icons.css';
 
@@ -53,11 +55,34 @@ export const Icons = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    
+    const timer2 = () =>{
+        let navigation = document.querySelector('.logoUnidos');
+        navigation.classList.add('animate__animated', 'animate__bounceOutRight');
+        timer();
+    }
+    
+    const timer = () => {
+        let navigation = document.querySelector('.logoUnidos');
+        navigation.addEventListener('animationend', () => {
+            let x = document.querySelector('.logoMunicipio');
+            navigation.style.display = 'none';
+            x.style.display = 'block';
+            x.classList.add('animate__animated', 'animate__slideInUp');
+            timer2()
+          });
+
+    }
+    setTimeout(() => {
+        timer2()
+    },
+    5000);
+
 
     return(
         <div className="iconsContainer">
             <div className="dependenciaIMG">
-                <img src={dependencia} alt="dependencia" />
+                {/* <img src={logoAnimado} alt="dependencia" /> */}
             </div>
             <div className="dependenciaTitular">
                 <h2>Ing. Carlos Osnaya Betancourt</h2>
@@ -70,12 +95,16 @@ export const Icons = () => {
                 <img src={mail} alt="Mail"  onClick={handleOpen}/>
                 <img src={identidad} alt="Perfil"  />
                 <img src={adjunto} alt="Ajuntos"  />
-                <img src={ubicacion} alt="Ubicacion"  />
+                <img src={redes} alt="Redes"  />
             </div>
             <div className="logosMunicipales">
-                <img src={logoMunicipio} alt="logo Municipal" />
-                <img src={logoUnidos} alt="logo Unidos" />
-                <img src={logoGobierna} alt="logo Gobierna" />
+                <div className="logoUnidos animate__animated animate__backInLeft">
+                    <img src={logoUnidos} alt="logo Unidos" />
+                </div>
+                <div className="logoMunicipio animate__animated animate__slideInDown">
+                    <img src={logoMunicipio} alt="logo Municipal" />
+                    <img className="logoGobierna" src={logoGobierna} alt="logo Gobierna" />
+                </div>
             </div>
             <Modal
                 open={open}
